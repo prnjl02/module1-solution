@@ -8,11 +8,15 @@
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
     <script src ="angular.js"></script>
     <script src="app.js"></script>
+    <!-- <style src="app.css"></style> -->
 </head>
 <body ng-controller="LunchCheckController">
-    <p>Module 1 Solution</p>
-    <p>Please enter your lunch values</p>
-    <input type="text">
+    <p style="margin-left:548px;">Module 1 Solution</p>
+    <div  ng-controller="LunchCheckController" style="margin:61px 22px 81px 479px;">
+    <p>Please enter your lunch values comma separated</p>
+    <input type="text" ng-model="inputValue" style="margin-left: 46px;">
+    <button ng-click="submit()">Submit</button>
+    </div>
     
 </body>
 </html>
