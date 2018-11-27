@@ -11,7 +11,19 @@
                    if(inputval===undefined){
                     alert("Please Enter some value");
                    return;
-                }
+                   }
+                       else if(inputval===" "){
+                           alert('Please enter some value');
+                           return;
+                       }
+                       else if(inputval===""){
+                           alert('Please enter some value');
+                           return;
+                       }
+                   else if(inputval===','){
+                       alert('Please enter some value');
+                       return;
+                   }
                 var arr= inputval.split(',');
                    if(arr.length >0 && arr.length ===3 ){
                        alert("Enjoy!!!!");
@@ -23,6 +35,7 @@
                     alert("Can enter max 3 values");
                     return;
                 }
+                
                    else{
                        alert(' Please enter atleast 3 values');
                        return;
